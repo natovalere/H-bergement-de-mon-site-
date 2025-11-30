@@ -1,0 +1,117 @@
+:root {
+  /* Couleurs de base du thème */
+  --color-background: #0b0f19;
+  --color-text-default: white;
+  
+  /* Couleurs néon */
+  --neon-start: #40e0d0; /* cyan */
+  --neon-end: #8a2be2;   /* violet */
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-background);
+    color: var(--color-text-default);
+    font-family: sans-serif;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+    
+
+    background-color: var(--neon-end);
+    color: var(--color-text-default);
+}
+button{
+    display: flex!
+}
+
+
+/* MENU */
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--color-text-default);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/* Effet au survol */
+nav ul li a:hover {
+    color: var(--neon-start);
+    letter-spacing: 1px;
+}
+
+/* BOUTONS */
+button {
+    background-color: var(--neon-end);
+    color: white;
+    border-radius: 10px;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+    
+}
+
+button:hover {
+    background-color: var(--neon-start);
+    color: black;
+}
+
+/* IMAGES */
+img {
+    width: 600px;
+    border-radius: 30px;
+}
+
+/* SECTION */
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.description, .image {
+    flex: 1;
+    text-align: left;
+    padding: 80px;
+    font-size: 50px;
+    line-height: 20px;
+
+}
+
+/* TITRES ET TEXTES */
+h3 {
+    font-size: 50px;
+    color: var(--neon-start);
+}
+
+h4 {
+    font-size: 25px;
+    color: var(--neon-end);
+}
+
+p {
+    font-size: 20px;
+    color: var(--color-text-default);
+}

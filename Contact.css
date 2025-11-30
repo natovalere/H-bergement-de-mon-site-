@@ -1,0 +1,123 @@
+:root {
+  --color-background: #0b0f19;
+  --color-text: #ffffff;
+
+  --neon-start: #40e0d0;
+  --neon-end: #8a2be2;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: var(--neon-end);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    color: var(--color-text);
+}
+
+nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--neon-start);
+}
+
+/* CONTENU */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    gap: 50px;
+}
+
+/* Texte */
+.contact-text {
+    flex: 1;
+}
+
+.contact-text h2 {
+    color: var(--neon-start);
+    font-size: 32px;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* FORMULAIRE */
+.contact-form {
+    flex: 1;
+    background-color: #0d1020;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid var(--neon-end);
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+    color: var(--neon-start);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: var(--color-background);
+    border: 1px solid var(--neon-end);
+    border-radius: 8px;
+    color: var(--color-text);
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* BOUTONS */
+button {
+    background-color: var(--neon-end);
+    color: var(--color-text);
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--neon-start);
+    color: black;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}

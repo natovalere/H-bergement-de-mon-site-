@@ -1,0 +1,97 @@
+/* 🎨 Couleurs du thème */
+:root {
+  --color-background: #0b0f19;
+  --color-text-default: white;
+
+  /* Couleurs pour le dégradé néon */
+  --neon-start: #40e0d0; /* Aqua */
+  --neon-end:   #8a2be2; /* Violet */
+}
+
+/* Style général */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text-default);
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: var(--neon-end);  /* Violet */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    color: var(--color-text-default);
+}
+
+/* Navigation */
+nav a {
+    color: var(--color-text-default);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--neon-start);  /* Aqua */
+    text-decoration: underline;
+}
+
+/* Section principale */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    gap: 40px;
+}
+
+/* Texte */
+.about-text {
+    flex: 1;
+    color: var(--color-text-default);
+}
+
+.about-text h2 {
+    color: var(--neon-start);  /* Aqua */
+    font-size: 32px;
+}
+
+/* Image */
+.about-image img {
+    width: 400px;
+    border-radius: 20px;
+    border: 3px solid var(--neon-end); /* Violet */
+}
+
+/* Texte dans main */
+main {
+    color: var(--color-text-default);
+}
+
+/* Bouton */
+button {
+    background-color: var(--neon-end); /* Violet */
+    color: var(--color-text-default);
+
+    border-radius: 10px;
+    padding: 6px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--neon-start); /* Aqua */
+    transform: scale(1.05);
+}

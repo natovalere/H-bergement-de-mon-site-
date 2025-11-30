@@ -1,0 +1,115 @@
+/* 🎨 VARIABLES DU THÈME */
+:root {
+  /* Couleurs de base du thème */
+  --color-background: #0b0f19;
+  --color-text-default: white;
+
+  /* Couleurs néon */
+  --neon-start: #40e0d0; /* Aqua */
+  --neon-end: #8a2be2;   /* Violet */
+}
+
+/* STYLE GLOBAL */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--color-background);
+    color: var(--color-text-default);
+
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+
+    background-color: var(--neon-end);
+    color: var(--color-text-default);
+}
+
+/* NAVIGATION */
+nav {
+    background: var(--neon-start);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: var(--color-text-default);
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--neon-end);
+    text-decoration: underline;
+}
+
+/* TITRES */
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    color: var(--neon-start);
+}
+
+/* SECTION COMPÉTENCES */
+.competence-container {
+    display: flex;
+    gap: 20px;
+    padding: 0 40px 40px;
+    flex-wrap: wrap;
+}
+
+.competence {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+
+    border: 1px solid var(--neon-end);
+    box-shadow: 0px 0px 10px var(--neon-end);
+
+    transition: transform .3s, box-shadow .3s;
+    width: 280px;
+}
+
+.competence:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 18px var(--neon-start);
+}
+
+.competence h2 {
+    color: var(--neon-start);
+    margin-bottom: 10px;
+}
+
+.competence p {
+    color: var(--color-text-default);
+    line-height: 1.5;
+}
+
+/* BOUTONS */
+button {
+    background-color: var(--neon-end);
+    color: var(--color-text-default);
+
+    border-radius: 10px;
+    padding: 6px 12px;
+
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--neon-start);
+    transform: scale(1.05);
+}
